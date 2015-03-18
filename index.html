@@ -16,13 +16,14 @@
   <button id="jquery-append">Hello from jQuery append</button>
   <ol id="output-list"></ol>
   <script type='text/javascript'>
-      require(['app'], function (amber) {
+      require(['app', 'src/Boomerang', 'src/Boomerang-Tests', 'src/Zendo', 'src/Zendo-Tests'], function (amber) {
           amber.initialize({
             //used for all new packages in IDE
             'transport.defaultAmdNamespace': "zendo"
           });
           require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
           amber.globals.Zendo._start();
+          window.amber = amber;
       });
   </script>
   </body>
