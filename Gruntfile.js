@@ -34,7 +34,9 @@ module.exports = function (grunt) {
             all: {
                 src: [
                     'src/Zendo.st', // list all sources in dependency order
-                    'src/Zendo-Tests.st' // list all tests in dependency order
+                    'src/Zendo-Tests.st', // list all tests in dependency order
+                    'src/Boomerang.st', // list all sources in dependency order
+                    'src/Boomerang-Tests.st' // list all sources in dependency order
                 ],
                 amd_namespace: 'zendo',
                 libraries: ['SUnit', 'Web']
@@ -45,6 +47,7 @@ module.exports = function (grunt) {
                     /* add dependencies packages here */
                     'Zendo', /* add other code-to-test packages here */
                     'SUnit',
+                    'Boomerang-Tests', // list all sources in dependency order
                     'Zendo-Tests' /* add other test packages here */
                 ],
                 main_class: 'NodeTestRunner',
