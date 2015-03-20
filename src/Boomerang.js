@@ -1,8 +1,8 @@
-define("boomerang/Boomerang", ["amber/boot", "amber_core/Kernel-Objects", "amber_core/Kernel-Collections"], function($boot){
+define("zendo/Boomerang", ["amber/boot", "amber_core/Kernel-Objects", "amber_core/Kernel-Collections"], function($boot){
 var $core=$boot.api,nil=$boot.nil,$recv=$boot.asReceiver,$globals=$boot.globals;
 $core.addPackage('Boomerang');
 $core.packages["Boomerang"].innerEval = function (expr) { return eval(expr); };
-$core.packages["Boomerang"].transport = {"type":"amd","amdNamespace":"boomerang"};
+$core.packages["Boomerang"].transport = {"type":"amd","amdNamespace":"zendo"};
 
 $core.addClass('Boomerang', $globals.Object, [], 'Boomerang');
 $core.addMethod(

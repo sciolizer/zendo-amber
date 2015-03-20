@@ -1,8 +1,8 @@
-define("boomerang/Boomerang-Tests", ["amber/boot", "amber_core/SUnit"], function($boot){
+define("zendo/Boomerang-Tests", ["amber/boot", "amber_core/SUnit"], function($boot){
 var $core=$boot.api,nil=$boot.nil,$recv=$boot.asReceiver,$globals=$boot.globals;
 $core.addPackage('Boomerang-Tests');
 $core.packages["Boomerang-Tests"].innerEval = function (expr) { return eval(expr); };
-$core.packages["Boomerang-Tests"].transport = {"type":"amd","amdNamespace":"boomerang"};
+$core.packages["Boomerang-Tests"].transport = {"type":"amd","amdNamespace":"zendo"};
 
 $core.addClass('BoomerangParseWordsAndArraysTest', $globals.TestCase, [], 'Boomerang-Tests');
 $core.addMethod(

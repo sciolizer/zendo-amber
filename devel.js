@@ -3,6 +3,7 @@ define([
     './deploy',
     // --- packages used only during development begin here ---
     'zendo/Zendo-Tests',
+    'zendo/Boomerang-Tests',
     'amber-attic/Benchfib',
     'amber-attic/Examples',
     'amber-attic/IDE'
